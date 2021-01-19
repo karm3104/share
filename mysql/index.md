@@ -29,7 +29,7 @@
 |||||
 |*|テーブルやレコードのコピー|*|*|
 ||create table 新TB名 select * from コピー元TB名|テーブルの完全コピー|FIELDも中身も取ってくる|
-||create table 新TB名 like コピー元TB名|コピー元のフィールド構造だけをコピー|主キーなど属性もコピー|||
+||create table 新TB名 like コピー元TB名|コピー元のフィールド構造だけをコピー|主キーなど属性もコピー|
 ||insert into 既存TB名 select * from コピー元TB名|他テーブルのレコードをコピー|構造が互いに同じであること|
 ||insert into 既存TB名 select * from コピー元TB名|特定のフィールドのデータをコピー||
 |||||
