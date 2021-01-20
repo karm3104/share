@@ -11,7 +11,7 @@ title: NOTE
 ## WHAT'S NEW?
 
 |Date|Update Contents|Details|
-|---|---|---|
+|---|:-:|:-:|
 |2021/01/20| [クラス設計の特徴](php/class_design.md){:target="_blank"}|新規作成|
 |2021/01/20| [Markdown記法メモ](markdown.md){:target="_blank"}|新規作成|
 |2021/01/20| [Mysqlコマンド2](mysql/com_sed.md){:target="_blank"}|新規作成|
@@ -33,7 +33,7 @@ title: NOTE
 
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
-| [クラス設計の特徴](php/class_design.md){:target="_blank"}|コマンドの確認（追加・削除・変更）|*|
+| [クラス設計の特徴](php/class_design.md){:target="_blank"}|忘備録|*|
 
 ### JavaScript  
 
