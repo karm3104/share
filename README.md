@@ -9,6 +9,10 @@ This page is for information only.
 |---|:-:|:-:|
 | [NOTE](note/index.md){:target="_blank"}|Share my learning.|*|
 
+---
+
+Last update :2021/01/20
+
 <!-- You can use the [editor on GitHub](https://github.com/karm3104/share/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
