@@ -7,7 +7,7 @@ This page is for information only.
 
 |Contents|Details|Survival Flag|
 |---|:-:|:-:|
-| [NOTE](mysql/com_adm.md){:target="_blank"}|Share my learning.|*|
+| [NOTE](note/index.md){:target="_blank"}|Share my learning.|*|
 
 <!-- You can use the [editor on GitHub](https://github.com/karm3104/share/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
