@@ -4,7 +4,7 @@ title: Note_share
 ## ABOUT
 ---
 
-サーバーの基礎知識やプログラミングを学んでいます。  
+サーバーの基礎知識やプログラミングを学習中です。  
 学んだ内容やまとめた内容などをまとめています。
 
 ---
@@ -12,34 +12,35 @@ title: Note_share
 
 |Date|Update Contents|Details|
 |---|---|---|
+|2021/01/20| [Markdown記法メモ](markdown.md){:target="_blank"}|新規作成|
+|2021/01/20| [Mysqlコマンド2](mysql/com_sed.md){:target="_blank"}|新規作成|
 |2021/01/20| [Mysqlコマンド1](mysql/com_adm.md){:target="_blank"}|内容変更| 
 |2021/01/20| TOPページ作成|新規作成|
 |||[過去の記事はこちら](old.md){:target="_blank"}|
 
 ---
 
-## Database ( MySQL ) 
+## CONTENT OF STUDY 
+
+### Database ( MySQL ) 
 
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
 | [Mysqlコマンド1](mysql/com_adm.md){:target="_blank"}|コマンドの確認（追加・削除・変更）|*|
 | [Mysqlコマンド2](mysql/com_sed.md){:target="_blank"}|コマンドの確認（検索・抽出・表示）|*|
 
-## PHP
+### PHP
 
 
-## JavaScript  
+### JavaScript  
 
 
-## Linux  
-
-
-
+### Linux  
 
 
 ---
 
-## その他
+## OTHER
 
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
@@ -48,7 +49,7 @@ title: Note_share
 
 ---  
 
-## ポートフォリオサイト
+## PORTFOLIO
 
 ---
 <!-- Last update:2021/01/20 -->
