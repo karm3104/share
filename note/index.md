@@ -40,9 +40,10 @@ title: Note_share
 ---
 
 ## その他
+
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
-| [Markdown記法メモ](markdown.md){:target="_blank"}|コマンドの確認（追加・削除・変更）|*|
+| [Markdown記法メモ](markdown.md){:target="_blank"}|マークダウンの書き方|*|
 
 
 ---  
