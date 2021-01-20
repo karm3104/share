@@ -12,9 +12,9 @@ title: Note_share
 
 |Date|Update Contents|Details|
 |---|---|---|
-|2021/01/20| [Mysqlコマンド1](mysql/com_adm.md)|内容変更| 
+|2021/01/20| [Mysqlコマンド1](mysql/com_adm.md){:target="_blank"}|内容変更| 
 |2021/01/20| TOPページ作成|新規作成|
-|||[過去の記事はこちら](old.md)|
+|||[過去の記事はこちら](old.md){:target="_blank"}|
 
 ---
 
