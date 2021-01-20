@@ -7,7 +7,7 @@ This page is for information only.
 
 |Contents|Details|Survival Flag|
 |---|:-:|:-:|
-| [NOTE](note/index.md){:target="_blank"}|Share my learning.|*|
+| [NOTE](note/index.md)|Share my learning.|*|
 
 ---
 
