@@ -1,5 +1,5 @@
 ---
-title: Note_share
+title: NOTE
 ---
 ## ABOUT
 ---
