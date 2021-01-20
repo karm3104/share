@@ -1,6 +1,6 @@
 # CHANGE LOG
 
-[>Go back previous page?<](php/class_design.md)
+[>Go back previous page?<](index.md)
 
 |Date|Update Contents|Details|
 |---|---|---|
