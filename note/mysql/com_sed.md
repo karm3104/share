@@ -82,8 +82,10 @@
 |*|**NULLを利用した検索**|*|*|
 ||select * from TB名 where FIELD名 is null;|TB全てのデータからFIELD内でNULLの項目を表示(**isは必ず入力**)||
 ||select * from TB名 where FIELD名 is not null;|TB全てのデータからFIELD内でNULLではない項目を表示(**isは必ず入力**)|||*|**複数条件の組み合わせ検索**|*|*|
-|||||
-|||||
+||select * from TB名 where 条件 比較演算子 条件|||
+|Ex|select * from TB名 where FIELD名>=50 and FIELD名<=100|FIELDのデータが50以上100以下のものを検索||
+|Ex||||
+|Ex||||
 
 ## 確認系コマンド
 
