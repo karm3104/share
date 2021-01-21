@@ -95,15 +95,3 @@
 ||delete from TB名;|テーブルのレコードだけを削除||
 ||alter table TB名 drop FIELD名|指定したテーブルの指定したフィールドを削除||
 |||||
-
-## 削除系コマンド
-
-||コマンド|役割|備考|
-|:---|:---|:-:|:-:|
-||drop|削除||
-||drop databasee DB名;|指定したデータベース全体を削除||
-||drop table TB名;|指定したテーブル全体を削除||
-||drop table if exists TB名;|指定したテーブルが存在すれば対象を削除||
-||delete from TB名;|テーブルのレコードだけを削除||
-||alter table TB名 drop FIELD名|指定したテーブルの指定したフィールドを削除||
-|||||

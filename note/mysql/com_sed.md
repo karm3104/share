@@ -51,7 +51,7 @@
 ||select FIELD名 from TB名 limit 3;|TB名のFIELDの先頭のデータから3つ取り出し||
 ||select FIELD名 from TB名 limit 3 offset 4;|TB名のFIELDの4つ目のデータから3つ取り出し||
 |||||
-|*|**WHERE条件選択**|*|*|
+|*|**WHERE条件検索**|*|*|
 ||select * from TB名 where FIELD名>=100;|TB全てのデータから「FIELDのデータが100以上」のものを抽出||
 |||||
 |*|**比較演算子**|*|*|
@@ -81,13 +81,18 @@
 |||||
 |*|**NULLを利用した検索**|*|*|
 ||select * from TB名 where FIELD名 is null;|TB全てのデータからFIELD内でNULLの項目を表示(**isは必ず入力**)||
-||select * from TB名 where FIELD名 is not null;|TB全てのデータからFIELD内でNULLではない項目を表示(**isは必ず入力**)|||*|**複数条件の組み合わせ検索**|*|*|
+||select * from TB名 where FIELD名 is not null;|TB全てのデータからFIELD内でNULLではない項目を表示(**isは必ず入力**)||
+|*|**複数条件の組み合わせ検索**|*|*|
 ||select * from TB名 where 条件 比較演算子 条件|||
-|Ex|select * from TB名 where FIELD名>=50 and FIELD名<=100|FIELDのデータが50以上100以下のものを検索||
-|Ex||||
-|Ex||||
+|Ex|select * from TB名 where FIELD名>=50 and FIELD名<=100|FIELDのデータが50以上かつ100以下のものを検索||
+|※|※ORとANDの優先順位|※ANDが優先されるためOR優先したい場合はカッコで囲って先に処理させる||
+|*|**並べ替え出力**|*|*|
+||select * from TB名 order by FIELD名 asc;|TB全てのデータからFIELD内データを昇順で表示||
+||select * from TB名 order by FIELD名 asc;|TB全てのデータからFIELD内データを降順で表示||
+|※|※指定なしでも昇順で表示される|※降順の際は必ず「desc」をつける。limit指定で上位○個表示も可能||
+|||||
 
-## 確認系コマンド
+## グループ毎に表示
 
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
