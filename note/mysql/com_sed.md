@@ -18,7 +18,6 @@
 ||desc テーブル名;|テーブルの型、フィールド項目、名前の確認||
 |※|set names cp932;|日本語使うときは入れるときも出すときも必須！(文字化けを防ぐ)|※|
 ||select * from テーブル名|テーブルの中身の確認||
-|||||
 
 
 ## 表示系コマンド
@@ -34,7 +33,6 @@
 |:---|:---|:---|:---|
 ||select FIELD名 as 置換後FIELD名 from TB名;|出力時にフィールド名を置き換える||
 ||select FIELD名*1000 as 置換後FIELD名 from TB名;|出力時にフィールドのデータを*1000した上でFIELD名を置き換える||
-|||||
 
 ### 四則演算
 
@@ -44,7 +42,6 @@
 ||select FIELD名1-FIELD名2 from TB名;|TB名のFIELD1とFIELD2を引く||
 ||select FIELD名1*FIELD名2 from TB名;|TB名のFIELD1とFIELD2をカケル||
 ||select FIELD名1/FIELD名2 from TB名;|TB名のFIELD1とFIELD2を割る||
-|||||
 
 ### 関数
 
@@ -58,8 +55,6 @@
 ||select FIELD名1,FIELD名2,FIELD名3, concat(FIELD名1,FIELD名2) from TB名;|FIELD1,2,3からFIELD1,2を結合して表示|**concat**|
 ||select FIELD名1,FIELD名2,FIELD名3, substring(FIELD名1, 2, 3) from TB名;|FIELD1のデータの２桁目から３桁分を取り出して表示|**substring**|
 ||insert into TB名(FIELD名) values(now());|日時の取得|**now()**|
-|||||
-|||||
 
 
 ## 条件指定検索
@@ -75,7 +70,6 @@
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
 ||select * from TB名 where FIELD名>=100;|TB全てのデータから「FIELDのデータが100以上」のものを抽出||
-|||||
 
 ### 比較演算子
 
@@ -91,7 +85,6 @@
 ||not in(O,O,...)|oかoのいずれも等しくない||
 ||between a and b|aからbの範囲内||
 ||not between a and b|aからbの範囲内外||
-|||||
 
 ### 文字列検索
 
@@ -102,7 +95,6 @@
 ||'a%'|文字列'a'で始まる||
 ||'%a%'|文字列'a'がどこかに含まれる||
 ||'%%'|文字列なんでもOK|?|
-|||||
 
 ### ワイルドカード
 
@@ -112,7 +104,6 @@
 |Ex|%県|埼玉県、廃藩置県、…||
 ||＿|任意の1文字が該当||
 |Ex|長_県|長崎県、長い県、…||
-|||||
 
 ### NULLを利用した検索
 
@@ -130,6 +121,7 @@
 |※|※ORとANDの優先順位|※ANDが優先されるためOR優先したい場合はカッコで囲って先に処理させる|※|
 
 ### 並べ替え出力
+
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
 ||select * from TB名 order by FIELD名 asc;|TB全てのデータからFIELD内データを昇順で表示||
