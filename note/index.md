@@ -27,8 +27,8 @@ title: NOTE
 
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
-| [Mysqlコマンド1](mysql/com_adm.md){:target="_blank"}|コマンドの確認（追加・削除・変更・レコード編集）||
-| [Mysqlコマンド2](mysql/com_sed.md){:target="_blank"}|コマンドの確認（検索・抽出・表示）|*|
+| [Mysqlコマンド1](mysql/com_adm.md){:target="_blank"}|コマンド（追加・削除・変更・レコード編集）||
+| [Mysqlコマンド2](mysql/com_sed.md){:target="_blank"}|コマンド（検索・抽出・表示）|*|
 
 ### PHP
 
