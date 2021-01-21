@@ -158,6 +158,19 @@
 |Ex|select FIELD名 avg(FIELD2) as 平均 from TB名 where FIELD2>=50 **group by FIELD名** habving avg(FIELD2)>=100 **order by avg(FIELD2) desc FIELD名;**|FIELDデータ毎にまとめるが、表示するのは、FIELD2が50以上のもので→**FIELD名データをwhereで集約**→かつFIELD2が100以上のデータをhavingでまとめたものを→**avg値を平均とした上で大きい順にFIELD名のデータとして出力**||
 |※|where→group by→havingの順番は覚える|where(で絞った条件の結果を)group by(でグループ内重複があったらまとめて)having(でグループ内を条件で検索する)|※|
 
+
+
+
+## 複数テーブルの利用
+
+||コマンド|役割|備考|
+|:---|:---|:---|:---|
+||select * from TB1 union select from TB2|TB1とTB2を単純に合わせて出力する||
+|||||
+|||||
+|||||
+|||||
+
 <!-- ## 雛形
 
 ||コマンド|役割|備考|
