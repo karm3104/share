@@ -167,8 +167,16 @@
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
 ||select * from TB1 union select from TB2|TB1とTB2を単純に合わせて出力する||
-|||||
-|||||
+
+### 内部結合・外部結合
+
+||コマンド|役割|備考|
+|:---|:---|:---|:---|
+|*|**内部結合**|*|*|
+||INNER JOIN|内部結合||
+|Ex|select * from TB1 inner join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものだけを、全フィールド分出力||
+|Ex|select TB1.bang, TB2.nama, from TB1 inner join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものだけを、全フィールド分出力||
+|*|**外部結合**|*|*|
 |||||
 |||||
 
