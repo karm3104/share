@@ -12,18 +12,14 @@ title: NOTE
 
 |Date|Update Contents|Details|
 |---|:-:|:-:|
-|2021/01/21| [Mysqlコマンド2](mysql/com_sed.md){:target="_blank"}|内容変更|
-|2021/01/20| [クラス設計の特徴](php/class_design.md){:target="_blank"}|新規作成|
-|2021/01/20| [Markdown記法メモ](markdown.md){:target="_blank"}|新規作成|
-|2021/01/20| [Mysqlコマンド2](mysql/com_sed.md){:target="_blank"}|新規作成|
-|2021/01/20| [Mysqlコマンド1](mysql/com_adm.md){:target="_blank"}|内容変更| 
+|2021/01/21| [Mysqlコマンド2](#Database(MySQL))|内容変更|
 |||[過去の記事はこちら](old.md)|
 
 ---
 
 ## CONTENT OF STUDY 
 
-### Database ( MySQL ) 
+### Database(MySQL) 
 
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
