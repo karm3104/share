@@ -5,10 +5,10 @@
 
 |中項目|小項目|
 |:---|:---|
-|[表示系コマンド](#表示系コマンド)|[エイリアス](#エイリアス)/  [四則演算](#四則演算)|
-|[条件指定検索](#条件指定検索)|[WHERE条件検索](#WHERE条件検索/)/  [比較演算子](#比較演算子)/  [文字列検索(あいまい検索)](#文字列検索)/ [ワイルドカード](#ワイルドカード)/ [NULLを利用した検索](#NULLを利用した検索)/  [複数条件の組み合わせ検索](#複数条件の組み合わせ検索)/  [並べ替え出力](#並べ替え出力)|
-|[グループ毎に表示](#グループ毎に表示)|[条件付きグループ検索](#条件付きグループ検索)|
-|[複数テーブルの利用](#複数テーブルの利用)|[内部結合・外部結合](#内部結合・外部結合)|
+|[表示系コマンド](#表示系コマンド)|[エイリアス(as)](#エイリアス)/  [四則演算](#四則演算)|
+|[条件指定検索](#条件指定検索)|[条件検索(WHERE)](#WHERE条件検索/)/  [比較演算子](#比較演算子)/  [文字列検索(LIKE検索)](#文字列検索)/ [ワイルドカード(%_)](#ワイルドカード)/ [NULLを利用した検索(IS NULL)](#NULLを利用した検索)/  [複数条件の組み合わせ検索(AND,OR)](#複数条件の組み合わせ検索)/  [並べ替え出力(asc, desc)](#並べ替え出力)|
+|[グループ毎に表示](#グループ毎に表示)|[グループ検索(GROUP BY)](#グループ検索)/ [条件付きグループ検索(HAVING)](#条件付きグループ検索)|
+|[複数テーブルの利用](#複数テーブルの利用)|[内部結合・外部結合(INNER JOIN, OUTER JOIN)](#内部結合・外部結合)|
 
 
 
@@ -45,10 +45,10 @@
 
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
-||select FIELD名1+FIELD名2 from TB名;|TB名のFIELD1とFIELD2を足す||
-||select FIELD名1-FIELD名2 from TB名;|TB名のFIELD1とFIELD2を引く||
-||select FIELD名1*FIELD名2 from TB名;|TB名のFIELD1とFIELD2をカケル||
-||select FIELD名1/FIELD名2 from TB名;|TB名のFIELD1とFIELD2を割る||
+||select FIELD名1+FIELD名2 from TB名;|TB名のFIELD1とFIELD2を足す|+|
+||select FIELD名1-FIELD名2 from TB名;|TB名のFIELD1とFIELD2を引く|-|
+||select FIELD名1*FIELD名2 from TB名;|TB名のFIELD1とFIELD2をカケル|*|
+||select FIELD名1/FIELD名2 from TB名;|TB名のFIELD1とFIELD2を割る|/|
 
 ### 関数
 
@@ -133,12 +133,14 @@
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
 ||select * from TB名 order by FIELD名 asc;|TB全てのデータからFIELD内データを昇順で表示||
-||select * from TB名 order by FIELD名 asc;|TB全てのデータからFIELD内データを降順で表示||
+||select * from TB名 order by FIELD名 desc;|TB全てのデータからFIELD内データを降順で表示||
 |※|**指定なしでも昇順で表示される**|**降順の際は必ず「desc」をつける。limit指定で上位○個表示も可能**|※|
 
 
 
 ## グループ毎に表示
+
+### グループ検索
 
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
@@ -177,10 +179,11 @@
 |*|**内部結合**|*|*|
 ||INNER JOIN|内部結合||
 |Ex|select * from TB1 inner join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものだけを、全フィールド分出力||
-|Ex|select TB1.bang, TB2.nama, from TB1 inner join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものだけを、全フィールド分出力||
+|Ex|select TB1.bang, TB2.nama, from TB1 inner join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものだけを、TB1.bangとTB2.namaのフィールドデータ分出力||
 |*|**外部結合**|*|*|
-||OUTER JOIN|||
-|||||
+||LEFT OUTER JOIN|一致したレコード及び下の例のTB1(左側)の全データを表示||
+||RIGHT OUTER JOIN|一致したレコード及び下の例のTB2(右側)の全データを表示||
+|Ex|select * from TB1 left outer join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものとTB1の全データを、全フィールド分出力|||||
 
 <!-- ## 雛形
 
