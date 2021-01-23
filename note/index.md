@@ -12,6 +12,9 @@ title: NOTE
 
 |Date|Update Contents|Details|
 |---|:-:|:-:|
+|2021/01/23| [Mysqlコマンド2](#Database(MySQL))|内容変更|
+|2021/01/23| [Mysqlコマンド1](#Database(MySQL))|内容変更|
+|2021/01/23| INDEX |内容変更|
 |2021/01/21| [Mysqlコマンド2](#Database(MySQL))|内容変更|
 |||[過去の記事はこちら](old.md)|
 
