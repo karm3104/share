@@ -1,14 +1,14 @@
-# 検索・抽出・表示・複数テーブル利用　コマンド集
+# 検索・抽出・表示・複数TABLE利用　コマンド集
 
 
 ## ページ内リンク
 
 |中項目|小項目|
 |:---|:---|
-|[表示系コマンド](#表示系コマンド)|[エイリアス(as)](#エイリアス)/  [四則演算](#四則演算)|
-|[条件指定検索](#条件指定検索)|[条件検索(WHERE)](#WHERE条件検索/)/  [比較演算子](#比較演算子)/  [文字列検索(LIKE検索)](#文字列検索)/ [ワイルドカード(%_)](#ワイルドカード)/ [NULLを利用した検索(IS NULL)](#NULLを利用した検索)/  [複数条件の組み合わせ検索(AND,OR)](#複数条件の組み合わせ検索)/  [並べ替え出力(asc, desc)](#並べ替え出力)|
-|[グループ毎に表示](#グループ毎に表示)|[グループ検索(GROUP BY)](#グループ検索)/ [条件付きグループ検索(HAVING)](#条件付きグループ検索)|
-|[複数テーブルの利用](#複数テーブルの利用)|[内部結合・外部結合(INNER JOIN, OUTER JOIN)](#内部結合・外部結合)|
+|[表示系コマンド](#表示系コマンド)|[エイリアス ( as ) ](#エイリアス)/  [四則演算](#四則演算)|
+|[条件指定検索](#条件指定検索)|[条件検索 ( WHERE ) ](#WHERE条件検索/)/  [比較演算子 ](#比較演算子)/  [文字列検索 ( LIKE検索 ) ](#文字列検索)/ [ワイルドカード ( %, _ ) ](#ワイルドカード)/ [NULLを利用した検索( IS NULL ) ](#NULLを利用した検索)/  [複数条件の組み合わせ検索 ( AND, OR ) ](#複数条件の組み合わせ検索)/  [並べ替え出力 ( asc, desc ) ](#並べ替え出力)|
+|[グループ毎に表示](#グループ毎に表示)|[グループ検索( GROUP BY ) ](#グループ検索)/ [条件付きグループ検索(HAVING ) ](#条件付きグループ検索)|
+|[複数TABLEの利用](#複数TABLEの利用)|[内部結合・外部結合 ( INNER JOIN, OUTER JOIN ) ](#内部結合・外部結合)|
 
 
 
@@ -18,12 +18,12 @@
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
 ||mysql -u root -p|ログインコマンド（-u:ユーザー指定、-p:パスワード…ここブランクエンターで次で入力）||
-||show database();|データベースの中身確認||
-||use DB名|対象データベースに移動||
-||show tables;|テーブルの中身確認||
-||desc テーブル名;|テーブルの型、フィールド項目、名前の確認||
+||show database();|DATABASEの中身確認||
+||use DB名|対象DATABASEに移動||
+||show tables;|TABLEの中身確認||
+||desc TABLE名;|TABLEの型、FIELD項目、名前の確認||
 |※|set names cp932;|日本語使うときは入れるときも出すときも必須！(文字化けを防ぐ)|※|
-||select * from テーブル名|テーブルの中身の確認||
+||select * from TABLE名|TABLEの中身の確認||
 
 
 
@@ -31,15 +31,15 @@
 
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
-||select FIELD名2,FIELD名3,FIELD名1 from TB名;|フィールドを入れ替えて表示する||
+||select FIELD名2,FIELD名3,FIELD名1 from TB名;|FIELDを入れ替えて表示する||
 ||select FIELD名2,FIELD名3,FIELD名2,…,from TB名 from TB名;|連続して表示も可能||
 
 ### エイリアス
 
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
-||select FIELD名 as 置換後FIELD名 from TB名;|出力時にフィールド名を置き換える||
-||select FIELD名*1000 as 置換後FIELD名 from TB名;|出力時にフィールドのデータを*1000した上でFIELD名を置き換える||
+||select FIELD名 as 置換後FIELD名 from TB名;|出力時にFIELD名を置き換える||
+||select FIELD名*1000 as 置換後FIELD名 from TB名;|出力時にFIELDのデータを*1000した上でFIELD名を置き換える||
 
 ### 四則演算
 
@@ -153,7 +153,7 @@
 ||select FIELD名 avg(FIELD2) as 平均 from TB名 group by FIELD名|TBのFIELD名のデータ重複をまとめて、FIELD2のavg値を平均として表示||
 |*|**件数・合計・平均値**|*|*|
 ||select FIELD名 count(*) as 件数 sum(FIELD2) as 合計 avg(FIELD2) as 平均 from TB名 group by FIELD名|TBのFIELD名のデータ重複をまとめて、重複分をcountとして件数に出力して、FIELD2のsum値を合計、avg値を平均としてそれぞれ表示||
-|※|**group byを使うときにselectで指定できる項目は**|**group byで指定したフィールドか、関数で呼び出して計算したフィールドのみ可能！**|※|
+|※|**group byを使うときにselectで指定できる項目は**|**group byで指定したFIELDか、関数で呼び出して計算したFIELDのみ可能！**|※|
 
 ### 条件付きグループ検索
 
@@ -166,7 +166,7 @@
 
 
 
-## 複数テーブルの利用
+## 複数TABLEの利用
 
 ||コマンド|役割|備考|
 |:---|:---|:---|:---|
@@ -178,12 +178,12 @@
 |:---|:---|:---|:---|
 |*|**内部結合**|*|*|
 ||INNER JOIN|内部結合||
-|Ex|select * from TB1 inner join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものだけを、全フィールド分出力||
-|Ex|select TB1.bang, TB2.nama, from TB1 inner join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものだけを、TB1.bangとTB2.namaのフィールドデータ分出力||
+|Ex|select * from TB1 inner join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものだけを、全FIELD分出力||
+|Ex|select TB1.bang, TB2.nama, from TB1 inner join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものだけを、TB1.bangとTB2.namaのFIELDデータ分出力||
 |*|**外部結合**|*|*|
 ||LEFT OUTER JOIN|一致したレコード及び下の例のTB1(左側)の全データを表示||
 ||RIGHT OUTER JOIN|一致したレコード及び下の例のTB2(右側)の全データを表示||
-|Ex|select * from TB1 left outer join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものとTB1の全データを、全フィールド分出力|||||
+|Ex|select * from TB1 left outer join TB2 on TB1.bang = TB2.bang|TB1とTB2を結合して、TB1.bangとTB2.bangが一致するものとTB1の全データを、全FIELD分出力|||||
 
 <!-- ## 雛形
 
