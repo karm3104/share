@@ -1,16 +1,17 @@
-# 追加・削除・変更・RECORD編集　コマンド集
+# 追加・削除・変更・レコード編集・ビュー・トランザクション　コマンド集
 
 
 ## ページ内リンク
 
 |中項目|小項目|
 |:---|:---|
-|[追加系コマンド](#追加系コマンド)|[TABLEやRECORD、DBの作成、追加( CREATE, INSERT )](#TABLEやRECORDのコピー)/ [TABLEやRECORDのコピー( CREATE, INSERT )](#TABLEやRECORDのコピー)/ [ビューの追加(view)](#ビューの追加)|
-|[キーの設定](#キーの設定)|主キー( primary key )/ ユニークキー( unique )/ 自動採番関連( auto_increment ) /FIELD初期値( default )|
-|[確認系コマンド](#確認系コマンド)|( show, desc, select * from )|
-|[改造系コマンド](#改造系コマンド)|[FIELDの値を変更( alter table )](#FIELDの値を変更)/  [FIELD位置の変更( alter table … first等 )](#FIELD位置の変更)|
-|[削除系コマンド](#削除系コマンド)|DB,TABLE削除( drop ) /RECORD全削除 ( delete from )/ FIELD削除( alter table … drop …)|
-|[RECORD編集](#RECORD編集)|[RECORD追加( insert into ... value ... )](#RECORD追加)/  [RECORD変更( update ... set ...'' )](#RECORD変更)/  [RECORD削除( delete from ... where ... )](#RECORD削除)|
+|[追加系コマンド](#追加系コマンド)|[TABLEやRECORD、DBの作成、追加 ( CREATE, INSERT ) ](#TABLEやRECORDのコピー) / [TABLEやRECORDのコピー ( CREATE, INSERT ) ](#TABLEやRECORDのコピー) / [ビューの追加 ( view ) ](#ビューの追加)|
+|[キーの設定](#キーの設定)|主キー ( primary key ) / ユニークキー ( unique ) / 自動採番関連 ( auto_increment ) / FIELD初期値 ( default ) |
+|[確認系コマンド](#確認系コマンド)|確認 ( show, desc, select * from ) |
+|[改造系コマンド](#改造系コマンド)|[FIELDの値を変更 ( alter table ) ](#FIELDの値を変更)/  [FIELD位置の変更 ( alter table … first等 ) ](#FIELD位置の変更)|
+|[削除系コマンド](#削除系コマンド)|DB,TABLE削除 ( drop ) / RECORD全削除 ( delete from ) / FIELD削除 ( alter table … drop … ) |
+|[RECORD編集](#RECORD編集)|[RECORD追加 ( insert into ... value ... ) ](#RECORD追加)/  [RECORD変更 ( update ... set ...'' ) ](#RECORD変更)/  [RECORD削除 ( delete from ... where ... ) ](#RECORD削除)|
+|[トランザクション](#トランザクション)|開始 ( start transaction ) / 戻す ( rollback ) / 確定 ( commit ) |
 
 
 
@@ -152,3 +153,13 @@
 |:---|:---|:---|:---|
 ||delete from TB名 where 条件;|条件に該当するデータを削除する||
 
+
+
+## トランザクション
+
+||コマンド|役割|備考|
+|:---|:---|:---|:---|
+||start transaction;|トランザクションを有効にする||
+||rollback; |条件に該当するデータを削除する||
+||commit;|条件に該当するデータを削除する||
+|※|イメージとして|start transactionを宣言してその時のデータを抜き出す。rollbackは抜き出したデータを破棄する。commitで抜き出したデータを格納する。|※|
