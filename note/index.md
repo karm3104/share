@@ -12,10 +12,10 @@ title: NOTE
 
 |Date|Update Contents|Details|
 |---|:-:|:-:|
-|2021/01/23| [Mysqlコマンド2](#Database(MySQL))|内容変更|
-|2021/01/23| [Mysqlコマンド1](#Database(MySQL))|内容変更|
-|2021/01/23| INDEX |内容変更|
-|2021/01/21| [Mysqlコマンド2](#Database(MySQL))|内容変更|
+|2021/01/23| [Mysqlコマンド2 ( 検索系 ) ](mysql/com_sed.md)|内容変更|
+|2021/01/23| [Mysqlコマンド1 ( 追加系 ) ](mysql/com_adm.md)|内容変更|
+|2021/01/23| Index |内容変更|
+|2021/01/21| [Mysqlコマンド2 ( 検索系 ) ](mysql/com_adm.md)|内容変更|
 |||[過去の記事はこちら](old.md)|
 
 ---
@@ -26,7 +26,7 @@ title: NOTE
 
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
-| [Mysqlコマンド1](mysql/com_adm.md){:target="_blank"}|コマンド（追加・削除・変更・レコード編集・ビュー・トランザクション）||
+| [Mysqlコマンド1](mysql/com_adm.md){:target="_blank"}|コマンド（追加・削除・変更・レコード編集・ビュー・トランザクション）|*|
 | [Mysqlコマンド2](mysql/com_sed.md){:target="_blank"}|コマンド（検索・抽出・表示・複数テーブルの利用）|*|
 
 ### PHP
