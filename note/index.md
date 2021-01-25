@@ -5,17 +5,16 @@ title: NOTE
 
 
 サーバーの基礎知識やプログラミングを学習中です。  
-学んだ内容やまとめた内容などをまとめています。
+学んだ内容やメモ、覚書などをまとめています。
 
 ---
 ## WHAT'S NEW?
 
 |Date|Update Contents|Details|
 |---|:-:|:-:|
-|2021/01/23| [Mysqlコマンド2 ( 検索系 ) ](mysql/com_sed.md)|内容変更|
-|2021/01/23| [Mysqlコマンド1 ( 追加系 ) ](mysql/com_adm.md)|内容変更|
-|2021/01/23| Index |内容変更|
-|2021/01/21| [Mysqlコマンド2 ( 検索系 ) ](mysql/com_adm.md)|内容変更|
+|2021/01/25|  [PHPメモ](php/class_design.md){:target="_blank"}|内容変更|
+|2021/01/25|  [Django設定覚書](python/django_kakeibo_info)|内容変更|
+|2021/01/25| Index |内容変更|
 |||[過去の記事はこちら](old.md)|
 
 ---
@@ -26,19 +25,27 @@ title: NOTE
 
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
-| [Mysqlコマンド1](mysql/com_adm.md){:target="_blank"}|コマンド（追加・削除・変更・レコード編集・ビュー・トランザクション）|*|
-| [Mysqlコマンド2](mysql/com_sed.md){:target="_blank"}|コマンド（検索・抽出・表示・複数テーブルの利用）|*|
+| [Mysqlコマンド1 ( 追加系 ) ](mysql/com_adm.md){:target="_blank"}|コマンド（追加・削除・変更・レコード編集・ビュー・トランザクション）|*|
+| [Mysqlコマンド2 ( 検索系 ) ](mysql/com_sed.md){:target="_blank"}|コマンド（検索・抽出・表示・複数テーブルの利用）|*|
 
 ### PHP
 
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
-| [クラス設計の特徴](php/class_design.md){:target="_blank"}|忘備録||
+| [PHPメモ](php/class_design.md){:target="_blank"}|まとめ|*|
+| [クラス設計の特徴](php/class_design.md){:target="_blank"}|忘備録|*|
+
+### Python  
+
+|Contents|Details|Update Flag|
+|---|:-:|:-:|
+| [Django設定覚書](python/django_kakeibo_info){:target="_blank"}|Anaconda環境下でのDjango設定覚書|*|
 
 ### JavaScript  
 
 
 ### Linux  
+
 
 
 ---
