@@ -12,7 +12,7 @@ title: NOTE
 
 |Date|Update Contents|Details|
 |---|:-:|:-:|
-|2021/01/25|  [PHPメモ](php/class_design.md){:target="_blank"}|内容変更|
+|2021/01/25|  [PHPメモ](php/php_memo.md){:target="_blank"}|内容変更|
 |2021/01/25|  [Django設定覚書](python/django_kakeibo_info)|内容変更|
 |2021/01/25| Index |内容変更|
 |||[過去の記事はこちら](old.md)|
