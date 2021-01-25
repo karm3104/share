@@ -16,7 +16,6 @@ djangoの仮想化関連DIR（cd c:xxxxxxxx\django\venv）内で
 
 ```
 .\[仮想環境名]\Scripts\activate
-.\paymanager\Scripts\activate
 ```
 
 ### 無効化
@@ -28,7 +27,7 @@ deactivate
 ### 開発サーバ起動（プロジェクト内manage. py）
 
 ```
-cd c:xxxxxxxx\django\プロジェクト名[paymanager]
+cd c:xxxxxxxx\django\[プロジェクト名]
 python manage.py runserver
 ```
 
@@ -47,9 +46,10 @@ mkdir c:xxxxxxxx\django\venv
 cd c:xxxxxxxx\django\venv
 ```
 
-python -m venv [仮想環境名]で仮想環境の作成
+仮想環境の作成
+
 ```
-python -m venv paymanager
+python -m venv [仮想環境名]
 ```
 
 django対象ディレクトリに移動
@@ -61,7 +61,6 @@ django対象ディレクトリ（cd c:xxxxxxxx\django\venv）内で
 仮想環境の有効化（アクティベーション）
 
 ```
-.\paymanager\Scripts\activate
 .\[仮想環境名]\Scripts\activate
 ```
 
@@ -107,21 +106,20 @@ pip list
 ```
 cd c:xxxxxxxx\django
 django-admin startproject [プロジェクト名]
-django-admin startproject paymanager
 ```
-（→完了するとプロジェクト名[paymanager]のフォルダとファイルが出来上がる。）
+（→完了すると[プロジェクト名]のフォルダとファイルが出来上がる。）
 
 
 ## 開発サーバ起動（プロジェクト内のmanage　.py ）
 ```
-cd c:xxxxxxxx\django\プロジェクト名[paymanager]
+cd c:xxxxxxxx\django\[プロジェクト名]
 python manage.py runserver
 ```
 
 ### 日本語化(初回のみ)
 
 ```
-C:xxxxxxxx\django\paymanager\paymanager\settings.py
+C:xxxxxxxx\django\[プロジェクト名]\[プロジェクト名]\settings.py
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 ↓　↓
@@ -146,14 +144,13 @@ django対象ディレクトリ（cd c:xxxxxxxx\django\venv）内で
 
 ```
 .\[仮想環境名]\Scripts\activate
-.\paymanager\Scripts\activate
 ```
 
 ### アプリケーションの作成
 
 ```
-cd c:xxxxxxxx\django\paymanager
-python manage.py startapp アプリケーション名[kakeibo]
+cd c:xxxxxxxx\django\[プロジェクト名]
+python manage.py startapp [アプリケーション名]
 ```
 
 
@@ -172,7 +169,6 @@ djangoの仮想化関連DIR（cd c:xxxxxxxx\django\venv）内で
 
 ```
 .\[仮想環境名]\Scripts\activate
-.\paymanager\Scripts\activate
 ```
 
 ### 無効化
@@ -184,7 +180,7 @@ deactivate
 ### 開発サーバ起動（プロジェクト内manage. py）
 
 ```
-cd c:xxxxxxxx\django\プロジェクト名[paymanager]
+cd c:xxxxxxxx\django\[プロジェクト名]
 python manage.py runserver
 ```
 
