@@ -12,6 +12,8 @@ title: NOTE
 
 |Date|Update Contents|Details|
 |---|:-:|:-:|
+|2021/01/25| Index |内容変更|
+|2021/01/26|  [PHPメモ2](php/php_memo2.md){:target="_blank"}|内容変更|
 |2021/01/25|  [PHPメモ](php/php_memo.md){:target="_blank"}|内容変更|
 |2021/01/25|  [Django設定覚書](python/django_kakeibo_info)|内容変更|
 |2021/01/25| Index |内容変更|
@@ -32,7 +34,8 @@ title: NOTE
 
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
-| [PHPメモ](php/class_design.md){:target="_blank"}|まとめ|*|
+| [PHPメモ1](php/php_memo.md){:target="_blank"}|まとめ ( k基本・GET・POST ) |*|
+| [PHPメモ2](php/php_memo2.md){:target="_blank"}|まとめ ( 変数・結合・演算・比較・条件文・繰返し処理・配列 ) |*|
 | [クラス設計の特徴](php/class_design.md){:target="_blank"}|忘備録|*|
 
 ### Python  
