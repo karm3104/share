@@ -276,7 +276,23 @@ continue
 
 ## 配列
 
+
 ### 配列の作成 
+
+```
+$seasons = array();
+$seasons[0] = ["春"];
+$seasons[1] = ["夏"];
+$seasons[2] = ["秋"];
+$seasons[3] = ["冬"];
+
+＠上の文と下の文は同じ意味
+
+$seasons = ["春","夏","秋","冬"]    
+
+```
+
+### 配列の作成 （別例）
 
 ```
 $numbers = [1,2,3,4]    
@@ -313,7 +329,7 @@ for ($i = 0;$i<count($numbers);$i++){
 **＠foreach文　　PHPの場合は主にこっち！**  
 
 ```
-＠keyとvalueの取り出し
+＠keyとvalueの取り出し($numberから(as)で$keyと$valueを（=>）取り出し)
 
 foreach($numbers as $key =>$value){
 	echo "添字". $key. "番は";
