@@ -14,7 +14,7 @@ title: NOTE
 |---|:-:|:-:|
 |2021/01/26|  [PHPメモ2](php/php_memo2.md){:target="_blank"}|新規作成|
 |2021/01/25|  [PHPメモ](php/php_memo.md){:target="_blank"}|内容変更|
-|2021/01/25|  [Django設定覚書](python/django_kakeibo_info)|内容変更|
+|2021/01/25|  [Django設定覚書](python/django_kakeibo_info){:target="_blank"}|内容変更|
 |||[過去の記事はこちら](old.md)|
 
 ---
