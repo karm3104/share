@@ -12,7 +12,7 @@ title: NOTE
 
 |Date|Update Contents|Details|
 |---|:-:|:-:|
-|2021/05/07|  [ポートフォリオ追加](http://karm3104s.com/){:target="_blank"}|新規追加|
+|2021/05/07|  [ポートフォリオ追加](portforio/pf_MyBookShelf.md){:target="_blank"}|新規追加|
 |2021/01/26|  [PHPメモ2](php/php_memo2.md){:target="_blank"}|新規作成|
 |2021/01/25|  [PHPメモ](php/php_memo.md){:target="_blank"}|内容変更|
 |||[過去の記事はこちら](old.md)|
@@ -24,7 +24,7 @@ title: NOTE
 
 |Contents|Details|Update Flag|
 |---|:-:|:-:|
-| [MY BOOK SHELF](http://karm3104s.com/){:target="_blank"}|会員制本棚サイト|*|
+| [MY BOOK SHELF](portforio/pf_MyBookShelf.md){:target="_blank"}|会員制本棚サイト|*|
 
 ---
 
