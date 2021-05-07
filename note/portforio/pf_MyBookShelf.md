@@ -44,8 +44,7 @@
 
 |Contents|Details|
 |---|:-:|
-| トップページ | 
-![screencapture-karm3104s-2021-05-07-16_28_56](https://user-images.githubusercontent.com/75430098/117414337-faceca00-af51-11eb-845d-210798469175.png) |
+| トップページ | ![screencapture-karm3104s-2021-05-07-16_28_56](https://user-images.githubusercontent.com/75430098/117414337-faceca00-af51-11eb-845d-210798469175.png) |
 | 一覧画面 | ![screencapture-karm3104s-book-list-2021-05-07-16_38_38](https://user-images.githubusercontent.com/75430098/117414955-b5f76300-af52-11eb-9aad-c67e9b610990.png) |
 | 詳細画面 | ![screencapture-karm3104s-book-detail-6-2021-05-07-16_40_01](https://user-images.githubusercontent.com/75430098/117415346-2c946080-af53-11eb-8363-367d53b120bd.png) |
 | 新規追加画面 | ![screencapture-karm3104s-book-create-2021-05-07-16_48_40](https://user-images.githubusercontent.com/75430098/117416271-2488f080-af54-11eb-80bf-8939c94f582b.png) |
