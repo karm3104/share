@@ -4,6 +4,7 @@
 
 |Date|Update Contents|Details|
 |---|---|---|
+|2021/01/25|  [Django設定覚書](python/django_kakeibo_info){:target="_blank"}|内容変更|
 |2021/01/23| [Mysqlコマンド1 ( 追加系 ) ](mysql/com_adm.md)|内容変更|
 |2021/01/23| Index |内容変更|
 |2021/01/21| [Mysqlコマンド2 ( 検索系 ) ](mysql/com_adm.md)|内容変更|
