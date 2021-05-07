@@ -17,6 +17,15 @@ title: NOTE
 |2021/01/25|  [PHPメモ](php/php_memo.md){:target="_blank"}|内容変更|
 |||[過去の記事はこちら](old.md)|
 
+
+---  
+
+## PORTFOLIO
+
+|Contents|Details|Update Flag|
+|---|:-:|:-:|
+| [MY BOOK SHELF](http://karm3104s.com/){:target="_blank"}|会員制本棚サイト|*|
+
 ---
 
 ## CONTENT OF STUDY 
@@ -58,13 +67,5 @@ title: NOTE
 | [Markdown記法メモ](markdown.md){:target="_blank"}|マークダウンの書き方||
 
 
----  
 
-## PORTFOLIO
-
-|Contents|Details|Update Flag|
-|---|:-:|:-:|
-| [MY BOOK SHELF](http://karm3104s.com/){:target="_blank"}|会員制本棚サイト|*|
-
----
 <!-- Last update:2021/01/20 -->
