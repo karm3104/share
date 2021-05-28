@@ -34,11 +34,7 @@
 |---|:--|
 | 使用言語 | Python , HTML , CSS |
 | フレームワーク | Django |
-| サーバー | AWS EC2 |
-| EC2内　OS | Amazon Linux 2|
-| EC2内　Database | PostgreSQL |
-| EC2内　APサーバー | Gunicorn |
-| EC2内　Webサーバー | Nginx |
+
 
 ---
 ### ScreenShot
